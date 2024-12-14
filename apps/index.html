@@ -3,40 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PyScript Example</title>
-    <!-- PyScript JavaScript library (load the latest version from the CDN) -->
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    <!-- PyScript CSS (for styling the PyScript components) -->
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <title>Fee Calculator for Reselling</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS -->
 </head>
 <body>
-    <h1>Welcome to My PyScript App!</h1>
-    
-    <!-- PyScript Component -->
-    <py-script>
-        # This Python code will execute inside the browser using PyScript
 
-        # Basic Python print to the console
-        print("Hello, PyScript!")
-        
-        # Performing arithmetic and displaying result
-        x = 5
-        y = 10
-        result = x + y
-        
-        # Log the result in the browser console
-        print(f"The result of {x} + {y} is {result}")
+<!-- Top section with Home button and search bar -->
+<div class="top-section">
+    <a href="https://nixappstatic.github.io/index.html" class="home-btn">Home</a>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for an app...">
+    </div>
+</div>
 
-        # Interacting with the DOM to add the result as an element
-        from js import document
-        element = document.createElement("p")
-        element.textContent = f"The result of {x} + {y} is: {result}"
-        document.body.appendChild(element)
-    </py-script>
+<!-- Main content (Fee Calculator) -->
+<div class="container">
+    <h1>Fee Calculator</h1>
+    <input type="number" id="salePrice" placeholder="Enter Sale Price: $" />
+    <button id="calculateBtn">Calculate Fees</button>
 
-    <!-- JavaScript code can also be added here if needed -->
-    <script>
-        console.log('Page Loaded!');
-    </script>
+    <div id="result" class="result" style="display:none;"></div>
+    <div id="error" class="error" style="display:none;"></div>
+</div>
+
+<!-- Link to external JS file -->
+<script src="script.js"></script>
+
 </body>
 </html>

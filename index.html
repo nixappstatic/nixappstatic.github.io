@@ -5,69 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-            margin: 20px;
-        }
-
-        h1 {
-            color: #007bff;
-            margin: 0;
-            white-space: nowrap;
-            font-size: 24px;
-        }
-
-        p {
-            margin-top: 10px;
-            font-size: 16px;
-            color: #555;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
-        .btn:active {
-            background-color: #003d82;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Top section with Home button on the left and search bar centered -->
+<div class="top-section">
+    <a href="index.html" class="home-btn">Home</a>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for an app...">
+    </div>
+</div>
+
+<!-- Main content goes here -->
 <div class="container">
-    <h1>Nix App Landing Page</h1>
-    <p>Click below to open the app:</p>
-    <a href="file:///C:/Users/bnic4/Documents/GitHub/nixappstatic.github.io/apps/index.html" class="btn">Open App</a>
+    <h1>Welcome to the App Landing Page</h1>
+    <p>Select an app:</p>
+    <a href="https://nixappstatic.github.io/apps/index.html" class="btn">Open App</a>
 </div>
 
 </body>
