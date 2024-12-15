@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add New Item - Nixapp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Top section with Home and Inventory buttons on the left and search bar centered -->
+<div class="top-section">
+    <a href="https://nixappstatic.github.io/index.html" class="home-btn">Home</a>
+    <h1 class="site-title">Nixapp</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for an app...">
+    </div>
+</div>
+
+<!-- Add New Item Form -->
+<div class="container">
+    <h1>Add New Item</h1>
+    <p>Fill in the details below to add a new item to your inventory.</p>
+
+    <!-- Item Form -->
+    <form action="add-item-process.php" method="POST" id="addItemForm">
+        <label for="itemName">Item Name</label>
+        <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" placeholder="Enter price per item" required>
+
+        <button type="submit" class="btn">Add Item</button>
+    </form>
+</div>
+
+</body>
+</html>
